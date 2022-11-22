@@ -21,6 +21,11 @@
             passengerCar.GetReplacementYear("Steering wheel");
             passengerCar.PrintServiceBook();
 
+            PassengerCar secondPassengerCar = new PassengerCar("Logan", 500, 2002, 25);
+            secondPassengerCar.AddReplacedPart("Steering wheel", 2005);
+            secondPassengerCar.AddReplacedPart("new", 2005);
+            secondPassengerCar.AddReplacedPart("part", 2007);
+            
             // Console.WriteLine(passengerCar.ToString());
             
             // Truck Test
@@ -38,13 +43,20 @@
             truck.PrintCarriage();
             truck.ChangeDriver(new Truck.DriverName("Sherlock", "Holmes"));
             
+            Truck secondTruck = new Truck("Mega", 255, 1865, 1001, 
+                new Truck.DriverName("Clark", "Kent"));
+            
+            truck.AddCarriage("Trash", 1000);
+            truck.AddCarriage("Water", 1);
+            
             // Console.WriteLine(truck.ToString());
 
             AutoPark autoPark = new AutoPark("My garage", new List<Car>()
             {
-                car,
                 passengerCar,
-                truck
+                secondPassengerCar,
+                truck,
+                secondTruck
             });
             
             autoPark.AddTransport(new Truck("Ultra", 554, 2015, 2000, new Truck.DriverName("Mike", "Tyson")));
