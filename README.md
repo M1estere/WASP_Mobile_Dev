@@ -9,8 +9,8 @@
 
 Название          | Статус | Ссылка
 ------------------|--------|--------
-Первое Д/З        | 🟢    | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Homeworks/First_Homework">Перейти</a>
-Автопарк          | 🟡    | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Homeworks/Second_Homework">Перейти</a>
+Первое Д/З        | 🟢    | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/First">Перейти</a>
+Автопарк          | 🟡    | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Autopark">Перейти</a>
 
 **Статусы выполнения:** <br>
 🔴 Не готово <br>
