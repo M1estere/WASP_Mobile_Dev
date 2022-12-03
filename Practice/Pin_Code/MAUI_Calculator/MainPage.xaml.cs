@@ -6,9 +6,6 @@ public partial class MainPage : ContentPage
 {
 	private const string PASSWORD = "1570";
 
-	private char _action;
-	private double? _previousValue;
-
 	public MainPage()
 	{
 		InitializeComponent();
