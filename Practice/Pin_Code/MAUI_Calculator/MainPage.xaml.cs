@@ -6,8 +6,6 @@ public partial class MainPage : ContentPage
 {
 	private const string PASSWORD = "1570";
 
-	private bool _isFinished = false;
-
 	private char _action;
 	private double? _previousValue;
 
@@ -18,15 +16,11 @@ public partial class MainPage : ContentPage
 
 	private void DigitClicked(object sender, EventArgs e)
 	{
-		if (_isFinished == true) return;
-
 		DisplayLabel.Text += (sender as Button).Text;
 	}
 
 	private void ActionClicked(object sender, EventArgs e)
 	{
-        if (_isFinished == true) return;
-
         _previousValue = Convert.ToDouble(DisplayLabel.Text.Split('\n')[0]);
 		_action = Convert.ToChar((sender as Button).Text);
 		DisplayLabel.Text += '\n';
@@ -34,8 +28,6 @@ public partial class MainPage : ContentPage
 
 	private void ClearClicked(object sender, EventArgs e)
 	{
-        if (_isFinished == true) return;
-
         SetLabelAlignment(TextAlignment.End);
 
         DisplayLabel.Text = "";
@@ -43,13 +35,14 @@ public partial class MainPage : ContentPage
 
 	private void ConfirmClicked(object sender, EventArgs e)
 	{
-        if (_isFinished == true) return;
-
         if (DisplayLabel.Text.ToString() == PASSWORD)
 		{
 			DisplayLabel.Text = "Congratulations, you are in!";
             SetLabelAlignment(TextAlignment.Center);
-			_isFinished = true;
+            foreach (View a in ((sender as Button).Parent as Grid).Children.Cast<View>())
+            {
+                a.IsEnabled = false;
+            }
         }
 		else 
 			DisplayLabel.Text = "";
