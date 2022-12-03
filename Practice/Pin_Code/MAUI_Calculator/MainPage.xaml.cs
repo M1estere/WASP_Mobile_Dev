@@ -18,8 +18,6 @@ public partial class MainPage : ContentPage
 
 	private void ActionClicked(object sender, EventArgs e)
 	{
-        	_previousValue = Convert.ToDouble(DisplayLabel.Text.Split('\n')[0]);
-		_action = Convert.ToChar((sender as Button).Text);
 		DisplayLabel.Text += '\n';
     	}
 
