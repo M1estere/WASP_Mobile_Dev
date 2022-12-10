@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.View.MainPage"
+             xmlns:viewmodel="clr-namespace:MauiApp1.ViewModel"
+             xmlns:model="clr-namespace:MauiApp1.Model"
+             >
+
+
+    <Grid
+            RowDefinitions="2.5*, *, *, *, *"
+            ColumnDefinitions="*, *, *, *">
+
+        <Button Grid.Column="0" Grid.Row="1" Text="7" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="1" Text="8" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="1" Text="9" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="2" Text="4" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="2" Text="5" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="2" Text="6" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="3" Text="1" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="3" Text="2" Clicked="DigitClicked"/>
+        <Button Grid.Column="2" Grid.Row="3" Text="3" Clicked="DigitClicked"/>
+        <Button Grid.Column="1" Grid.Row="4" Text="0" Clicked="DigitClicked"/>
+
+        <Button Grid.Column="3" Grid.Row="3" BorderWidth="1" Text="=" FontSize="20" Command="{Binding DoEqClick}"/>
+        <Button Grid.Column="4" Grid.Row="2" BorderWidth="1" Text="-" FontSize="20" Command="{Binding DoActionClick}"/>
+        <Button Grid.Column="3" Grid.Row="4" BorderWidth="1" Text="AC" FontSize="20" Command="{Binding DoResetClick}"/>
+        
+        <Button Grid.Column="3" Grid.Row="1" BorderColor="Black"  BorderWidth="1" Text="+" FontSize="20" Command="{Binding DoActionClick}"/>
+        <Button Grid.Column="0" Grid.Row="4" BorderColor="Black"  BorderWidth="1" Text="÷" FontSize="25" Command="{Binding DoActionClick}"/>
+        <Button Grid.Column="2" Grid.Row="4" BorderColor="Black"  BorderWidth="1" Text="×" FontSize="20" Command="{Binding DoActionClick}"/>
+
+        <Label x:Name="DisplayLabel" Text="13233" Grid.ColumnSpan="4" FontSize ="40" HorizontalTextAlignment="End" VerticalTextAlignment="End" Margin="0,0,20,10"/>
+    </Grid>
+
+</ContentPage>
