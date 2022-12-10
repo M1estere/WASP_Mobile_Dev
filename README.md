@@ -10,7 +10,7 @@
 Название          | Статус | Ссылка
 --------------------|--------|--------
 Первое Д/З          |   🟢  | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/First">Перейти</a>
-Автопарк            |   🟡  | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Autopark">Перейти</a>
+Автопарк            |   🟢  | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Autopark">Перейти</a>
 Магазин Муз. Дисков |   🟡  | <a href="https://github.com/M1estere/WASP_Mobile_Dev/tree/main/Music_Disks_Store">Перейти</a>
 
 **Статусы выполнения:** <br>
