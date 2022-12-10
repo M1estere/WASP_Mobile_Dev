@@ -11,16 +11,16 @@
             RowDefinitions="2.5*, *, *, *, *"
             ColumnDefinitions="*, *, *, *">
 
-        <Button Grid.Column="0" Grid.Row="1" Text="7" Clicked="DigitClicked"/>
-        <Button Grid.Column="1" Grid.Row="1" Text="8" Clicked="DigitClicked"/>
-        <Button Grid.Column="2" Grid.Row="1" Text="9" Clicked="DigitClicked"/>
-        <Button Grid.Column="0" Grid.Row="2" Text="4" Clicked="DigitClicked"/>
-        <Button Grid.Column="1" Grid.Row="2" Text="5" Clicked="DigitClicked"/>
-        <Button Grid.Column="2" Grid.Row="2" Text="6" Clicked="DigitClicked"/>
-        <Button Grid.Column="0" Grid.Row="3" Text="1" Clicked="DigitClicked"/>
-        <Button Grid.Column="1" Grid.Row="3" Text="2" Clicked="DigitClicked"/>
-        <Button Grid.Column="2" Grid.Row="3" Text="3" Clicked="DigitClicked"/>
-        <Button Grid.Column="1" Grid.Row="4" Text="0" Clicked="DigitClicked"/>
+        <Button Grid.Column="0" Grid.Row="1" Text="7" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="1" Grid.Row="1" Text="8" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="2" Grid.Row="1" Text="9" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="0" Grid.Row="2" Text="4" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="1" Grid.Row="2" Text="5" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="2" Grid.Row="2" Text="6" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="0" Grid.Row="3" Text="1" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="1" Grid.Row="3" Text="2" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="2" Grid.Row="3" Text="3" Command="{Binding DoDigitClick}"/>
+        <Button Grid.Column="1" Grid.Row="4" Text="0" Command="{Binding DoDigitClick}"/>
 
         <Button Grid.Column="3" Grid.Row="3" BorderWidth="1" Text="=" FontSize="20" Command="{Binding DoEqClick}"/>
         <Button Grid.Column="4" Grid.Row="2" BorderWidth="1" Text="-" FontSize="20" Command="{Binding DoActionClick}"/>
